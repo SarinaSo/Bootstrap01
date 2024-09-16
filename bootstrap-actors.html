@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Navbar</title>
+<style>
+    .nav-tabs button:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+  <!-- Bootstrap CSS einbinden -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <a class="navbar-brand text-light" href="#">Movie</a>
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/bootstrap-plot.html">Plot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/bootstrap-actors.html">Actors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/bootstrap-reviews.html">Reviews</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navbar end-->
+  <!-- content start -->
+   
+<div class="container-fluid p-5 ">
+    <h2 class="text-primary">Movie Title</h2>
+   <div class="row bg-light p-4">
+
+    <!-- Sidebar start-->
+    <div class="col-md-3">
+    <ul class="nav nav-tabs flex-column border-bottom-0" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active m-2 border-0 bg-transparent" id="actor01-tab" data-bs-toggle="tab" data-bs-target="#actor01" type="button" role="tab" aria-controls="actor01" aria-selected="true">Actor 01</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link m-2 border-0 bg-transparent" id="actor02-tab" data-bs-toggle="tab" data-bs-target="#actor02" type="button" role="tab" aria-controls="actor02" aria-selected="false">Actor 02</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link m-2 border-0 bg-transparent" id="actor03-tab" data-bs-toggle="tab" data-bs-target="#actor03" type="button" role="tab" aria-controls="actor03" aria-selected="false">Actor 03</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link m-2 border-0 bg-transparent" id="actor04-tab" data-bs-toggle="tab" data-bs-target="#actor04" type="button" role="tab" aria-controls="actor04" aria-selected="false">Actor 04</button>
+        </li>
+      </ul>
+      </div>
+      
+
+      
+    <!-- Sidebar end-->
+        <!--content start-->
+        <div class="col-md-9">
+        <div class="tab-content bg-secondary p-4 text-light" id="myTabContent">
+        <div class="tab-pane fade show active" id="actor01" role="tabpanel" aria-labelledby="actor01-tab" tabindex="0">
+            <h3>Actor 01</h3>
+            <p>I'm baby meggings portland Brooklyn snackwave copper mug, woke +1 meditation letterpress. Bitters slow-carb truffaut cardigan jawn chia. Master cleanse wolf vinyl migas, crucifix 90's cardigan banjo grailed irony authentic bitters. Mustache keffiyeh disrupt, synth hell of tilde drinking vinegar yuccie unicorn affogato pabst vegan mlkshk. Brooklyn biodiesel same tousled pop-up keffiyeh kitsch.</p>
+            <div class="d-flex justify-content-center mt-5"><img src="/images/actor.png" alt="name of the actor" ></div>
+        </div>
+
+        <div class="tab-pane fade" id="actor02" role="tabpanel" aria-labelledby="actor02-tab" tabindex="0">
+            <h3>Actor 02</h3>
+            <p>I'm baby meggings portland Brooklyn snackwave copper mug, woke +1 meditation letterpress. Bitters slow-carb truffaut cardigan jawn chia. Master cleanse wolf vinyl migas, crucifix 90's cardigan banjo grailed irony authentic bitters. Mustache keffiyeh disrupt, synth hell of tilde drinking vinegar yuccie unicorn affogato pabst vegan mlkshk. Brooklyn biodiesel same tousled pop-up keffiyeh kitsch.</p>
+            <div class="d-flex justify-content-center mt-5"><img src="/images/actor.png" alt="name of the actor" ></div>
+        </div>
+
+        <div class="tab-pane fade" id="actor03" role="tabpanel" aria-labelledby="actor03-tab" tabindex="0">
+            <h3>Actor 03</h3>
+            <p>I'm baby meggings portland Brooklyn snackwave copper mug, woke +1 meditation letterpress. Bitters slow-carb truffaut cardigan jawn chia. Master cleanse wolf vinyl migas, crucifix 90's cardigan banjo grailed irony authentic bitters. Mustache keffiyeh disrupt, synth hell of tilde drinking vinegar yuccie unicorn affogato pabst vegan mlkshk. Brooklyn biodiesel same tousled pop-up keffiyeh kitsch.</p>
+            <div class="d-flex justify-content-center mt-5"><img src="/images/actor.png" alt="name of the actor" ></div>
+        </div>
+
+        <div class="tab-pane fade" id="actor04" role="tabpanel" aria-labelledby="actor04-tab" tabindex="0">
+            <h3>Actor 04</h3>
+            <p>I'm baby meggings portland Brooklyn snackwave copper mug, woke +1 meditation letterpress. Bitters slow-carb truffaut cardigan jawn chia. Master cleanse wolf vinyl migas, crucifix 90's cardigan banjo grailed irony authentic bitters. Mustache keffiyeh disrupt, synth hell of tilde drinking vinegar yuccie unicorn affogato pabst vegan mlkshk. Brooklyn biodiesel same tousled pop-up keffiyeh kitsch.</p>
+            <div class="d-flex justify-content-center mt-5"><img src="/images/actor.png" alt="name of the actor" ></div>
+        </div>
+
+        </div>
+    </div>
+        <!--content end-->
+   </div>
+   </div>
+
+</div>
+
+  <!-- Bootstrap JS und jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
